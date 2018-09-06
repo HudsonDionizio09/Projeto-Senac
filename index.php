@@ -7,18 +7,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="resources/css/bootstrap.css">
-    <link rel="icon " href="resources/img/icone-da-pagina.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="icon " href="./assets/img/usuario.png">
     <title>Cadastro de Clientes</title>
 </head>
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Cadastro de Clientes </a>
-  <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-      <button class="btn btn-primary my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- nav bar -->
+<a class="navbar-brand" href="pagina-inicial.php">
+    <img src="./assets/img/home.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Inicio
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.php">Cadastrar</a>
+      <a class="nav-item nav-link active" href="listar.php">Listar</a>
+    </div>
+  </div>
 </nav>
-<body>
 <div class="container"> <!--Início do container-->
 <div class="row" style="margin-top: 50px;">
 <form><!--Incio do Formulario-->
