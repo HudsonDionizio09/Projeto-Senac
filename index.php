@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <?php 
 
+
+
+
 ?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="icon " href="./assets/img/usuario.png">
+    <link rel="stylesheet" href="./assets/css/all.css">
     <title>Cadastro de Clientes</title>
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- nav bar -->
@@ -30,73 +33,74 @@
 <div class="row" style="margin-top: 50px;">
 <form><!--Incio do Formulario-->
     <div class="form-group">
-      <label for="exampleInputEmail1">Nome</label>
-      <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Digite o seu nome">
+      <label for="exampleInputEmail1">Nome:</label>
+      <input type="text" class="form-control" id="nome"  placeholder="Digite  seu nome" value="">
     </div>
       <div class="form-group">
-      <label for="exampleInputPassword1">Sobrenome</label>
-      <input type="password" class="form-control" id="sobrenome" placeholder="">
+      <label for="exampleInputPassword1">Sobrenome:</label>
+      <input type="password" class="form-control" id="sobrenome" placeholder="Digite seu Sobrenome" value="">
       <div class="form-group">
-          <label for="dt_nasc">Data de Nascimento</label>
-          <input type="date" id="dt_nasc" name="dt_nasc" class="form-control"/>
+          <label for="dt_nasc">Data de Nascimento:</label>
+          <input type="date" id="dt_nasc" name="dt_nasc" class="form-control" value=""/>
         </div>
       <div class="form-group">
-        <label for="cpf">CPF</label>
-        <input type="text" class="form-control" name="cpf" id="cpf">
+        <label for="cpf">CPF:</label>
+        <input type="text" class="form-control" name="cpf" id="cpf" valeu="">
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sexo1" value="">
          <label class="form-check-label" for="inlineRadio1">Masculino</label>
       </div>
       <div class="form-check form-check-inline">
-         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="sexo2" value="">
         <label class="form-check-label" for="inlineRadio2">Feminino</label>
       </div>
       <div class="row">
     <div class="col">
-      <label for="cep">CEP</label>
+      <label for="cep">CEP:</label>
       <input type="text" class="form-control" placeholder="">
       
     </div>
     <div class="col">
-      <label for="logradouro">Logradouro</label>
+      <label for="logradouro">Logradouro:</label>
       <input type="text" class="form-control" placeholder="">
     </div>
     <div class="form-group">
-    				<label for="observacao">Obeservações</label>
+    				<label for="observacao">Obeservações:</label>
     				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
             <br />
     </div>
 </div>
   <div class="form-group col-md-6">
-    <label for="inputState">Cidade</label>
-      <select id="inputState" class="form-control">
-        <option selected>Selecione</option>
-			  <option value="nat">Natal</option>
-				<option value="par">Parnamirim</option>
+    <label for="estado">Estado:</label>
+      <select id="estado" class="form-control">
+        <option selected disable >Selecione</option>
+			  <option value="rn">Rio Grande do Norte</option>
       </select>
       <div class="form-row">
       <div class="form-group col-md-12">
-      <label for="inputCity">Bairro</label>
-      <input type="text" class="form-control" id="inputCity">
+      <label for="cidade">Cidade</label>
+      <select id="cidade" class="form-control">
+        <option selected disable >Selecione</option>
+			  <option value="nat">Natal</option>
+        <option value="par">Parnamirim</option>
+      </select>
     </div>
     <div class="form-group col-md-12">
-    <label for="inputState">Estado</label>
-      <select id="inputState" class="form-control">
-        <option selected>Selecione</option>
-			  <option value="nat">Rio Grande do Norte</option>
-      </select>
+    <label for="inputState">Bairro:</label>
+    <input type="text" class="form-control" id="inputCity">
       <div class="form-row">
     <div class="form-group col-md-12">
-      <label for="inputEmail4">Email</label>
+      <label for="inputEmail4">Email:</label>
       <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
     </div>
     <div class="form-group">
-    <button type="button" class="btn btn-primary">Cadastrar</button><!--Butões-->
-    <button type="button" class="btn btn-danger">Limpar</button>
+    <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i> Cadastrar </button><!--Butões-->
+    <button type="button" class="btn btn-danger"> <i class="fas fa-trash"></i> Limpar </button>
 </div>
 </form><!--Fim do Formulario-->
 </div> <!--Fim do container -->
 </form>   
 </body>
+</script>
 </html>
